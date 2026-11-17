@@ -9,9 +9,7 @@ de configuration et d’émulation reste celui de DS4Windows.
 
 ## Télécharger
 
-> **Publication incomplète : l’application ne peut pas encore être lancée depuis ce dépôt.** Sept fichiers binaires restent à publier. Les instructions ci-dessous seront applicables une fois le transfert terminé.
-
-Après la publication complète, clique sur **Code → Download ZIP**, puis extrais l’archive complète.
+Clique sur **Code → Download ZIP**, puis extrais l’archive complète.
 
 ## Démarrage rapide
 
