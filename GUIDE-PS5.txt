@@ -1,0 +1,65 @@
+﻿DS5Windows — Édition personnalisée par Resul Tektas
+Basée sur DS4Windows 3.3.3
+
+DS4Windows — copie configurée pour une manette PS5 DualSense
+
+Cette copie utilise votre DS4Windows 3.3.3 sans modifier ses exécutables.
+La prise en charge DualSense était présente, mais désactivée. Elle est
+maintenant activée dans Profiles.xml. Il ne s’agit pas d’une nouvelle
+application ni d’une nouvelle version officielle.
+
+DÉMARRAGE
+1. Fermez complètement toute autre instance de DS4Windows (y compris
+   dans la zone de notification près de l’horloge).
+2. Décompressez TOUT le ZIP dans un nouveau dossier accessible en écriture,
+   par exemple Documents\DS4Windows-PS5. Ne lancez pas depuis le ZIP.
+3. Ouvrez DS5Windows.exe dans ce nouveau dossier. Si un emplacement de
+   configuration est demandé, choisissez « Program Folder » pour utiliser
+   les réglages inclus plutôt que ceux d’AppData.
+4. Branchez la DualSense avec un câble USB-C capable de transmettre des
+   données. Commencez par USB pour vérifier le fonctionnement.
+5. Vérifiez que la manette apparaît dans Controllers/Manettes et que le
+   profil Resul - DualSense est sélectionné. Cliquez sur Start/Démarrer si nécessaire.
+6. Ouvrez Win+R, tapez joy.cpl et testez les boutons de la manette virtuelle.
+
+BLUETOOTH
+Débranchez le câble. Sur la manette éteinte, maintenez Create (le petit
+bouton à gauche du pavé tactile) et PS jusqu’au clignotement. Dans les
+paramètres Bluetooth de Windows, ajoutez la manette « Wireless Controller »
+ou « DualSense Wireless Controller ». Le PC doit disposer du Bluetooth.
+
+SI LA MANETTE N’APPARAÎT PAS
+Dans Settings > Device Options, cochez DualSense Controller Support,
+puis redémarrez DS4Windows. Cela permet aussi de corriger une configuration
+AppData utilisée à la place du fichier livré. Vérifiez le câble et que
+Windows détecte la manette. Si HidHide est installé, DS4Windows doit être
+autorisé à accéder à la manette masquée.
+
+PRÉREQUIS
+Cette version x64 demande Microsoft .NET 8 Desktop Runtime x64 et le
+pilote ViGEmBus pour créer la manette virtuelle. Les journaux de votre ZIP
+montrent que ViGEmBus 1.21.442.0 fonctionnait déjà lors du dernier lancement.
+Aucun pilote n’est ajouté ou installé par cette copie.
+
+UTILISATION EN JEU
+Le profil Resul - DualSense conserve la sortie Xbox 360 (XInput) de votre archive.
+Les jeux compatibles peuvent donc afficher A/B/X/Y plutôt que les symboles
+PlayStation. Cette sortie ne transmet pas les fonctions PS5 natives comme
+les gâchettes adaptatives pilotées par le jeu et l’haptique avancée.
+Pour un jeu prenant directement en charge la DualSense, fermez DS4Windows
+et utilisez la prise en charge native du jeu.
+Si une touche agit deux fois, évitez de faire gérer simultanément la même
+manette par Steam Input et DS4Windows. HidHide peut aussi être configuré
+pour masquer la manette physique tout en autorisant DS4Windows.
+
+MODIFICATIONS ET VALIDATION
+- Profiles.xml : DeviceOptions/DualSenseSupportSettings/Enabled = True.
+- Réglages et profil Resul - DualSense conservés ; exécutables et DLL inchangés.
+- Anciens journaux et capture d’écran exclus de cette copie.
+- Archive et XML vérifiés ; intégrité des exécutables comparée à l’original.
+- Aucun test matériel effectué : environnement de préparation Linux,
+  sans PC Windows ni manette connectée. La connexion reste à vérifier
+  sur votre PC.
+
+Projet et auteurs : DS4Windows (Jays2Kings, Ryochan7 et contributeurs).
+Cette adaptation de configuration ne revendique pas la création du logiciel.
